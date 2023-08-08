@@ -1,0 +1,37 @@
+$size-pc : 1200px;
+$size-gap : 30px;
+
+@mixin inner () {
+    max-width: $size-pc;
+    margin: 0 auto;
+    padding: 0 $size-gap/2;
+}
+
+@mixin position_center () {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin box_green () {
+    background: $color-green;
+    border-radius: 10px;
+}
+
+@mixin box_yellow () {
+    background: $color-yellow;
+    border-radius: 10px;
+}
+
+@mixin box_white () {
+    background: $color-white;
+    border: 1px solid $color-ddd;
+    border-radius: 10px;
+}
+
+@mixin box_gray () {
+    background: $color-f9;
+    border: 1px solid $color-ddd;
+    border-radius: 10px;
+}

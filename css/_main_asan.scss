@@ -1,0 +1,76 @@
+.main_asan {
+    .a_slide {
+        position: relative;
+
+        .asan {
+            height: 450px;
+        }
+
+        .asan01 {
+            background: url(../imges/ma_01.jpg)no-repeat center center/cover;
+        }
+        .asan02 {
+            background: url(../imges/ma_02.jpg)no-repeat center center/cover;
+        }
+        .asan03 {
+            background: url(../imges/ma_03.jpg)no-repeat center center/cover;
+        }
+
+        .slick-dots {
+            display: flex;
+            gap: 15px;
+
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translate(-50%, 0);
+
+            .slick-active {
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    
+                    transform: translate(0, -50%);
+    
+                    width: 15px;
+                    height: 15px;
+    
+                    background: $color-green;
+                    border-radius: 50%;
+                }
+            }
+
+            li {
+                
+                .button {
+                    width: 15px;
+                    height: 15px;
+                    background: $color-green;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin: 0 10px;
+                
+                    border: none;
+                    outline: none;
+                    font-size: 0;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    
+                    transform: translate(0, -50%);
+    
+                    width: 15px;
+                    height: 15px;
+    
+                    background: $color-white;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

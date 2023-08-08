@@ -1,0 +1,309 @@
+.header {
+    border-bottom: 1px solid $color-ddd;
+
+    .top_head {
+        background: #313334;
+        height: 38px;
+        
+        .inner {
+            .customer {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+
+                    li {
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: $color-ddd;
+                    }
+                }
+
+                .lng {
+                    background: #555;
+                    margin: 0 0 0 16px;
+
+                    a {
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: $color-white;
+                        line-height: 38px;
+                        padding: 0 12px;
+
+                        i {
+                            font-size: 13px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+
+                .search {
+                    background: $color-yellow;
+                    
+                    a {
+                        color: $color-white;
+                        line-height: 38px;
+                        padding: 0 12px;
+
+                        i {
+                            font-size: 18px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom_head {
+        height: 88px;
+        position: relative;
+        background: $color-white;
+
+        .inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+
+            .gnb {
+               
+                ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 64px;
+
+                    li {
+                        font-size: 18px;
+                        font-weight: 700;
+                        transition: 0.2s;
+
+                        a {
+                            line-height: 88px;
+
+                            &:hover {
+                                color: $color-green;
+                            }
+                        }
+
+                        &:hover { 
+                            .lnb {
+                                display: block;
+                                height: 350px;
+                                //border-bottom: 1px solid $color-ddd;
+                            }
+                        }
+
+                        .lnb {
+                            position: absolute;
+
+                            display: none;
+                            top: 89px;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                            width: 100%;
+                            height: 0;
+                            overflow: hidden;
+                            transition: 0.5s;
+                            background: $color-white;
+
+                            //border-top: 1px solid transparent;
+                            border-bottom: 1px solid $color-ddd;
+
+                            z-index: 998;
+
+                            .inner {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: flex-start;
+                                padding: 30px 15px;
+                                gap: 50px;
+                                //border-left: 1px solid $color-ddd;
+                                border-right: 1px solid $color-ddd;
+    
+                                .login {
+                                    flex: 1;
+                                    position: relative;
+
+                                    .benefit {
+                                        display: block;
+                                        font-size: 18px;
+                                        font-weight: 500;
+                                        line-height: 22px;
+                                        color: $color-444;
+                                        margin: 0 0 54px 0;
+                                    }
+                                    
+                                    ul {
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        gap: 15px;
+
+                                        li {
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            width: 100%;
+                                            padding: 10px 16px;
+
+                                            a {
+                                                line-height: 0;
+
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: space-between;
+
+                                                &:hover {
+                                                    color: inherit;
+                                                }
+                                            }
+                                        }
+
+                                        .log {
+                                            border: 1px solid $color-green;
+                                            color: $color-green;
+                                            transition: 0.5s;
+
+                                            &:hover {
+                                                background: $color-green;
+                                                color: $color-white;
+                                            }
+                                        }
+
+                                        .my {
+                                            border: 1px solid $color-yellow;
+                                            color: $color-yellow;
+                                            transition: 0.5s;
+
+                                            &:hover {
+                                                background: $color-yellow;
+                                                color: $color-white;
+                                            }
+                                        }
+
+                                        .care {
+                                            border: 1px solid $color-blue;
+                                            color: $color-blue;
+                                            transition: 0.5s;
+
+                                            &:hover {
+                                                background: $color-blue;
+                                                color: $color-white;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .tit {
+                                    flex: 1;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    height: 100%;
+                                    position: relative;
+
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 50%;
+                                        left: -20px;
+                                        transform: translate(0, -50%);
+
+                                        width: 1px;
+                                        height: 350px;
+                                        background: $color-ddd;
+                                    }
+                                }
+    
+                                .list {
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    height: 100%;
+
+                                    li {
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        
+                                        a {
+                                            line-height: 24px;
+                                        }
+
+                                        .lst {
+                                            flex-direction: column;
+                                            align-items: flex-start;
+                                            gap: 6px;
+                                            padding: 5px 0 0 0;
+
+                                            li {
+                                                font-size: 13px;
+                                                font-weight: 400;
+                                                color: $color-gray;
+
+                                                a {
+                                                    line-height: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+    
+                                .list01 {
+                                    flex: 1;
+                                    position: relative;
+
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 50%;
+                                        left: -20px;
+                                        transform: translate(0, -50%);
+
+                                        width: 1px;
+                                        height: 350px;
+                                        background: $color-ddd;
+                                    }
+                                }
+
+                                .list02 {
+                                    flex: 1;
+                                    position: relative;
+
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 50%;
+                                        left: -20px;
+                                        transform: translate(0, -50%);
+
+                                        width: 1px;
+                                        height: 350px;
+                                        background: $color-ddd;
+                                    }
+                                }
+
+                                .list03 {
+                                    flex: 1;
+                                    position: relative;
+
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 50%;
+                                        left: -20px;
+                                        transform: translate(0, -50%);
+
+                                        width: 1px;
+                                        height: 350px;
+                                        background: $color-ddd;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
