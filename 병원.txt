@@ -268,3 +268,16 @@ Copyright@2014 by Asan Medical Center. All Rights reserved.
 관련기관
  관련기관 바로가기
 서울아산병원, 17년 연속 존경받는 병원 1위 美뉴스위크, 서울아산병원 5개 임상분야 세계 10위권 한국산업고객만족도지수(KCSI) 종합병원 부문 9년 연속 1위 선정 서울아산병원, 정보보호 관리체계 ISMS 인증 획득
+
+<i class="bi bi-geo-alt"></i>
+<i class="bi bi-car-front"></i>
+<i class="bi bi-person-vcard"></i>
+<i class="bi bi-hospital"></i>
+<i class="bi bi-cup-hot"></i>
+<i class="bi bi-person-exclamation"></i>
+<i class="bi bi-stars"></i>
+<i class="bi bi-thermometer-half"></i>
+<i class="bi bi-calendar-heart"></i>
+<i class="bi bi-link-45deg"></i>
+<i class="bi bi-mic"></i>
+<i class="bi bi-pencil-square"></i>

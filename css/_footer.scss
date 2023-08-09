@@ -1,0 +1,22 @@
+.footer {
+    background: $color-gray;
+
+    .foo_imformation {
+        .inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            ul {
+                display: flex;
+                gap: 12px;
+                 
+                li {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}

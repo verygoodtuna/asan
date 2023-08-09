@@ -18,4 +18,10 @@ $(function () {
         arrows: false,
         slidesToShow: 2,
     })
+
+    $('.cus_slide').slick ({
+        arrows: false,
+        slidesToShow: 6,
+        infinite: true,
+    })
 })
