@@ -1,0 +1,64 @@
+.main_service {
+    border-bottom: 1px solid $color-ddd;
+
+    .s_slide {
+        @include box_gray ();
+        padding: 50px 0;
+        text-align: center;
+        margin: 0 0 36px 0;
+
+        .list {
+            text-align: center;
+
+            a {
+                i {
+                    display: block;
+                    font-size: 32px;
+                    font-weight: 300;
+                    margin: 0 0 12px 0;
+                }
+
+                span {
+                    display: block;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .output_box {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 32px;
+
+        li {
+            flex: 1;
+            color: $color-white;
+            
+            a {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 24px 32px;
+
+                font-size: 18px;
+                font-weight: 500;
+
+                i {
+                    font-size: 32px;
+                }
+            }
+
+            &:nth-child(1),
+            &:nth-child(3) {
+                @include box_green ();
+            }
+
+            &:nth-child(2) {
+                @include box_mint ();
+            }
+        }
+    }
+}

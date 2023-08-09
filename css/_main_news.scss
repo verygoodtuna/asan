@@ -1,0 +1,38 @@
+.main_news {
+    .inner {
+        .news_box {
+            display: flex;
+            gap: 32px;
+            margin: 0 0 36px 0;
+
+            .notice {
+                flex: 1;
+            }
+
+            .news {
+                flex: 1;
+            }
+
+            h3 {
+                text-align: left;
+            }
+
+            .news_con {
+                @include box_white ();
+                padding: 32px;
+
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    line-height: 40px;
+                }
+            }
+        }
+
+        .img_box {
+            display: flex;
+            gap: 32px;
+        }
+    }
+}

@@ -1,0 +1,143 @@
+.main_story {
+    background: $color-f9;
+
+    .inner {
+        .slide_box {
+            display: flex;
+            gap: 32px;
+            min-height: 200px;
+            margin: 0 0 36px 0;
+
+            .tv {
+                width: 569px;
+                @include box_white ();
+                padding: 40px 30px;
+                position: relative;
+
+                .tv_slide {
+
+                    .tv {
+                        margin: 0 15px;
+                    }
+                    
+                    .tv01 {
+                        background: url(../imges/mt_01.jpg)no-repeat center center/cover;
+                        height: 130px;
+                    }
+                    .tv02 {
+                        background: url(../imges/mt_02.jpg)no-repeat center center/cover;
+                        height: 130px;
+                    }
+                    .tv03 {
+                        background: url(../imges/mt_03.jpg)no-repeat center center/cover;
+                        height: 130px;
+                    }
+                    .tv04 {
+                        background: url(../imges/mt_04.jpg)no-repeat center center/cover;
+                        height: 130px;
+                    }
+                    .tv05 {
+                        background: url(../imges/mt_05.jpg)no-repeat center center/cover;
+                        height: 130px;
+                    }
+                    .tv06 {
+                        background: url(../imges/mt_06.jpg)no-repeat center center/cover;
+                        height: 130px;
+                    }
+                }
+                
+                .slide_btn {
+                    position: absolute;
+                    top: 58%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .imfor {
+                width: 569px;
+                @include box_white ();
+                padding: 40px 30px;
+                position: relative;
+
+                .imfor_slide {
+                    
+
+                    .if {
+                        margin: 0 15px;
+                        height: 130px;
+                        border-radius: 10px;
+                    }
+
+                    .if01 {
+                        background: url(../imges/mi_01.jpg)no-repeat center center/cover;
+                        height: 130px;
+                    }
+                    .if02 {
+                        background: url(../imges/mi_02.jpg)no-repeat center center/cover;
+                        height: 130px;
+                    }
+                    .if03 {
+                        background: url(../imges/mi_03.jpg)no-repeat center center/cover;
+                        height: 130px;
+                    }
+                    .if04 {
+                        background: url(../imges/mi_04.jpg)no-repeat center center/cover;
+                        height: 130px;
+                    }
+                    .if05 {
+                        background: url(../imges/mi_05.jpg)no-repeat center center/cover;
+                        height: 130px;
+                    }
+                    .if06 {
+                        background: url(../imges/mi_06.jpg)no-repeat center center/cover;
+                        height: 130px;
+                    }
+                }
+
+                .slide_btn {
+                    position: absolute;
+                    top: 58%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        .report {
+            display: flex;
+            gap: 32px;
+
+            li {
+                flex: 1;
+                text-align: center;
+
+                &:nth-child(1),
+                &:nth-child(2) {
+                    @include box_yellow ();
+                }
+
+                &:nth-child(3),
+                &:nth-child(4) {
+                    @include box_green ();
+                }
+
+                a {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 16px 32px;
+
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $color-white;
+
+                    i {
+                        font-size: 32px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

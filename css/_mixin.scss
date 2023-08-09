@@ -19,6 +19,11 @@ $size-gap : 30px;
     border-radius: 10px;
 }
 
+@mixin box_mint () {
+    background: $color-mint;
+    border-radius: 10px;
+}
+
 @mixin box_yellow () {
     background: $color-yellow;
     border-radius: 10px;

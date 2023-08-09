@@ -201,6 +201,7 @@
                                     flex: 1;
                                     font-size: 16px;
                                     font-weight: 500;
+                                    line-height: 16px;
                                     height: 100%;
                                     position: relative;
 
@@ -214,6 +215,11 @@
                                         width: 1px;
                                         height: 350px;
                                         background: $color-ddd;
+                                    }
+
+                                    i {
+                                        line-height: 16px;
+                                        vertical-align: middle;
                                     }
                                 }
     
