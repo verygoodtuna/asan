@@ -154,3 +154,19 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .main_imformation {
+        .call {
+            flex-direction: column;
+        }
+
+        .im_con {
+            flex-direction: column;
+
+            .beside {
+                flex-direction: column;
+            }
+        }
+    }
+}

@@ -9,6 +9,7 @@
 
         .list {
             text-align: center;
+            position: relative;
 
             a {
                 i {
@@ -25,6 +26,24 @@
                 }
             }
         }
+
+        .list02::before,
+        .list03::before,
+        .list04::before,
+        .list05::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+
+            width: 1px;
+            height: 140px;
+            background: $color-ddd;
+
+            z-index: 999;
+        }
+
     }
 
     .output_box {
@@ -59,6 +78,15 @@
             &:nth-child(2) {
                 @include box_mint ();
             }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main_service {
+        .output_box {
+            flex-direction: column;
+            
         }
     }
 }

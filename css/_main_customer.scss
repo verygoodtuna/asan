@@ -1,7 +1,7 @@
 .main_customer {
-    .inner {
-        position: relative;
+    position: relative;
 
+    .inner {
         .cus_slide {
             .cus {
                 width: 150px;
@@ -30,9 +30,19 @@
                 }
             }
         }
+    }
 
-        .slide_btn {
-            @include position_center ();
+    .slide_btn {
+        @include position_center ();
+        max-width: 1260px;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+
+        i {
+            font-size: 36px;
+            color: $color-black;
         }
     }
 }

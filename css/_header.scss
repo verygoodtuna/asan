@@ -311,5 +311,94 @@
                 }
             }
         }
+
+        .mobile_btn {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        .top_head {
+            display: none;
+        }
+
+        .bottom_head {
+            height: 60px;
+            .inner {
+                position: relative;
+
+                .gnb {
+                    display: none;
+                }
+
+                .mobile_btn {
+                    position: absolute;
+                    top: 50%;
+                    right: 30px;
+                    transform: translate(0, -50%);
+            
+                    width: 30px;
+                    height: 30px;
+                    background: $color-green;
+                    border-radius: 5px;
+            
+                    display: block;
+            
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+            
+                        width: 20px;
+                        height: 2px;
+                        background: $color-white;
+                       
+                        transition: 0.3s;
+                    }
+            
+                    span {
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+            
+                        color: transparent;
+            
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 20%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+            
+                            width: 20px;
+                            height: 2px;
+                            background: $color-white;
+                            z-index: 999;
+            
+                            transition: 0.3s;
+                        }
+            
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 75%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+            
+                            width: 20px;
+                            height: 2px;
+                            background: $color-white;
+                            z-index: 999;
+            
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
