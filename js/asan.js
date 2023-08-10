@@ -1,4 +1,24 @@
 $(function () {
+    $('.header .bottom_head .mobile_btn').on('click', function () {
+        $(this).toggleClass('on')
+        $('.gnb').toggleClass('on')
+    })
+
+    $('.header .gnb ul>li').on('click', function (e) {
+        e.preventDefault();
+        $('.gnb ul>li .lnb').toggleClass('on')
+    })
+
+    // $('.gnb').on('wheel', function (e) {
+    //     if ($('.gnb .lnb').hasClass('on')) {
+    //       e.preventDefault();
+    //     }
+    //     else {
+    //         e.preventDefault();
+    //     }
+    // })
+  
+
     $('.a_slide').slick ({
         arrows: false,
         dots: true,
